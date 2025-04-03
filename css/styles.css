@@ -39,11 +39,6 @@ header h1 {
 article {
     display: grid;
     grid-template-columns: 65% 35%;
-    grid-template-areas:
-        "header header header"
-        "image image text"
-        "text text text"
-        "footer footer footer";
     grid-gap: 20px;
 }
 
@@ -79,7 +74,6 @@ footer p {
     margin: 0;
 }
 
-/* RESPONSIVE DESIGN */
 @media (max-width: 900px) {
     article {
         display: flex;
@@ -92,7 +86,7 @@ footer p {
     }
 
     article div {
-        column-count: 1; /* Single column for small screens */
+        column-count: 1;
     }
 }
 
