@@ -19,9 +19,7 @@ body {
 #container {
     width: 60%;
     margin: auto;
-    background: white;
     padding: 40px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
@@ -107,3 +105,17 @@ article p strong {
     color: orange;
 }
 
+@media (max-width: 768px) {
+    #container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "header"
+            "article"
+            "footer";
+    }
+    
+    .content {
+        column-count: 1;
+        width: 100%;
+    }
+}
